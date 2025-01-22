@@ -34,7 +34,6 @@ Python/Django + AJAX
 Создание поста:
 \
 ![image](https://github.com/user-attachments/assets/fd873d4f-5d49-4f01-8d28-d31f1eef3680)
-
 \
 Созданный пост:
 \
@@ -43,6 +42,3 @@ Python/Django + AJAX
 Комментарии к посту с ролью пользователя (хранятся ниже на странице с постом):
 \
 ![image](https://github.com/user-attachments/assets/2532dc21-d5a7-462d-937a-2054f08ccbda)
-\
-
-

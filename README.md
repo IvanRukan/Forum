@@ -24,14 +24,24 @@ Python/Django + AJAX
 
 ## Скриншоты работы приложения
 Главная страница:
+\
 ![image](https://github.com/user-attachments/assets/349585e0-78ed-4024-b8c0-db665120d589)
+\
 Форма с регистрацией:
+\
 ![image](https://github.com/user-attachments/assets/ec276ee9-f18f-42e5-b0ab-622c72f598c1)
+\
 Создание поста:
+\
 ![image](https://github.com/user-attachments/assets/d0cf7d6e-891d-4379-97fe-ffcf47294b05)
+\
 Созданный пост:
+\
 ![image](https://github.com/user-attachments/assets/ff8f9d45-132e-48c2-8f7e-8c7a36d0e22c)
+\
 Комментарии к посту с ролью пользователя (хранятся ниже на странице с постом):
+\
 ![image](https://github.com/user-attachments/assets/2532dc21-d5a7-462d-937a-2054f08ccbda)
+\
 
 

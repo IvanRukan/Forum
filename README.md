@@ -33,7 +33,8 @@ Python/Django + AJAX
 \
 Создание поста:
 \
-![image](https://github.com/user-attachments/assets/d0cf7d6e-891d-4379-97fe-ffcf47294b05)
+![image](https://github.com/user-attachments/assets/fd873d4f-5d49-4f01-8d28-d31f1eef3680)
+
 \
 Созданный пост:
 \

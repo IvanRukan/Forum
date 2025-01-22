@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>Основная страница</title>
+    <link rel="stylesheet" href="{% static 'css/mainPage.css' %}"/>
+</head>
+<body>
+<nav>
+<a class="navLink" href="/registration">Зарегистрироваться</a>
+<a class="navLink" href="/login">Войти</a>
+<a class="navLink" href="/logout">Выйти</a>
+<a class="navLink" href="/create_publication">Создать публикацию</a>
+</nav>
+<h2>Созданные публикации:</h2>
+<div class="publicationsContainer">
+{% if publications %}
+{% for publ in publications %}
+    <a class="publicationLink" href="/publication?id={{ publ.id }}">
+    <h3>{{ publ.title }}</h3>
+    <div class="publElement">Категория: {{ publ.category }}</div>
+    <div class="publElement">Продукт: {{ publ.product }}</div>
+    <!--<div class="publDesc">{{ publ.desc }}</div>-->
+    <div class="publElement">Автор: {{ publ.user }}</div>
+    <div class="publElement">Отметки "Нравится": {{ publ.upvotes }}</div>
+    </a>
+{% endfor %}
+{% else %}
+<div>Публикации пока не были созданы</div>
+</div>
+{% endif %}
+</body>
+</html>

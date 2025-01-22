@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete publication</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/registration.css' %}"/>
+</head>
+<body>
+<div class="delete-container">
+    <h3 class="delete-header">{{ publ.title }}</h3>
+    <div class="delete-div">Категория: {{ publ.category }}</div>
+    <div class="delete-div">Товар: {{ publ.product.name }}</div>
+    <div class="delete-div">Описание: {{ publ.desc }}</div>
+    <div class="delete-div">Автор: {{ publ.user.first_name }}</div>
+</div>
+<form method="POST">
+       {% csrf_token %}
+        <input id="hidden_publication_id" type="hidden" name="publication_id" value="{{ publ.id }}">
+        <input type="submit" value="Удалить">
+</form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    background-color: #1D2D50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #DAFFFB;
+    
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    background-color: #DAFFFB;
+    color: #1D2D50;
+    border: 2px solid #1D2D50;
+    border-radius: 15px;
+    height: 2.5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+input[type=submit] {
+    background-color: #DAFFFB;
+    color: #1D2D50;
+    border: 2px solid #1D2D50;
+    border-radius: 15px;
+    height: 5vh;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    align-content: center;
+    font-size: medium;
+    width: 10vw;
+    text-align: center;
+    margin-top: 10px;
+
+}
+input[type=submit]:hover {
+    background-color: #1D2D50;
+    color: #DAFFFB;
+    border-color: #DAFFFB;
+    
+}
+
+
+textarea
+ {
+    background-color: #DAFFFB;
+    color: #1D2D50;
+    border: 2px solid #1D2D50;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+.delete-div {
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.delete-header {
+font-size: x-large;
+}
+
+
+.delete-container{
+display: flex;
+flex-direction: column;
+
+align-items: center;
+}

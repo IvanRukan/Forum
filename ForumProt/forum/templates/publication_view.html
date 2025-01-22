@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>{{ publ.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/publicationView.css' %}"/>
+</head>
+<body>
+ <h3>{{ publ.title }}</h3>
+    
+    <div class="publElement">Категория: {{ publ.category }}</div>
+    <div class="publElement">Товар: {{ publ.product.name }}</div>
+    <div class="publDesc">{{ publ.desc }}</div>
+    <div class="publElement">Автор: {{ publ.user.first_name }}</div>
+    <div class="publElement">Отметок "Нравится": {{ num_of_upvotes }}</div>
+    <button onclick="upvote_publication()" {{ upvote_disabled }}>Поставить "Нравится"</button>
+    <a class="actionLink" href="/edit_publication?id={{ publ.id }}">Редактировать</a>
+    <a class="actionLink" href="/delete_publication?id={{ publ.id }}">Удалить</a>
+    <hr>
+    <h2>Комментарии:</h2>
+    {% if comments %}
+{% for comment in comments %}
+    <br>
+    <div class="userRoleContainer">
+    <div class="userName">{{ comment.user }}</div>
+    {% if  comment.role  %}
+    <div class="userRole">{{ comment.role }}</div>
+    {% endif %}
+    </div>
+    
+    <div class="commentDesc">{{ comment.desc }}</div>
+    
+{% endfor %}
+{% else %}
+<div class="noComments">Комментариев пока нет</div>
+{% endif %}
+<form method="POST">
+       {% csrf_token %}
+       <table>
+           {{ form }}
+       </table>
+        <input id="hidden_publication_id" type="hidden" name="publication_id" value="{{ publ.id }}">
+        <input id="hidden_user_id" type="hidden" name="user_id" value="{{ user.id }}">
+       <input type="submit" value="Отправить комментарий">
+   </form>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{% static 'js/ajax.js' %}"></script>
+</body>
+</html>

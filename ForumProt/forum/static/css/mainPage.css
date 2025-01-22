@@ -1,0 +1,86 @@
+body {
+    background-color: #1D2D50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #DAFFFB;
+    border-radius: 20px;
+    position: relative;
+    top: -20px;
+    height: 10vh;
+}
+.navLink {
+    margin-top: 10px;
+    font-size: x-large;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #1E5F74;
+    border: 3px solid #1E5F74;
+    border-radius: 5px;    
+}
+.navLink:hover {
+    text-decoration: underline;
+
+}
+h2 {
+    color: #DAFFFB;
+    padding-left: 10px;
+    
+}
+.publicationsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.publicationLink{
+    text-decoration: none;
+    border: 3px solid #DAFFFB;
+    border-radius: 15px; 
+    margin: 20px;  
+    width: 12vw;
+    background-color: #DAFFFB;
+   
+    
+}
+
+.publElement, h3 {
+    color:#1E5F74;
+    margin: 5px;
+    
+
+}
+.publElement {
+    font-size: large;
+    padding: 5px;
+    font-weight: 400;
+}
+
+
+.publicationLink:hover {
+    background-color: #1E5F74;
+    
+}
+
+.publicationLink:hover .publElement {
+    color: #DAFFFB;
+    
+}
+
+.publicationLink:hover h3 {
+    color: #DAFFFB;
+    
+}
+
+

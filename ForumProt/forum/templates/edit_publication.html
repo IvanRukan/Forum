@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit publication</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/registration.css' %}"/>
+</head>
+<body>
+<form method="POST">
+       {% csrf_token %}
+       <table>
+           {{ form }}
+       </table>
+        <input id="hidden_publication_id" type="hidden" name="publication_id" value="{{ publ_id }}">
+        <input type="submit" value="Обновить">
+   </form>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+    background-color: #1D2D50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #DAFFFB;
+    
+}
+
+h3,h2,  .publElement, .publDesc{
+    color: #DAFFFB;
+    padding: 5px;
+   
+
+}
+h3, h2{
+    font-size: x-large;
+}
+.publElement{
+    font-size: large;
+    font-weight: 500;
+}
+.publDesc{
+    border: 3px solid #DAFFFB;
+    border-radius: 10px;
+    height: 25vh;
+    width: 30vw;
+}
+
+button, .actionLink {
+    background-color: #DAFFFB;
+    color: #1D2D50;
+    border: 2px solid #1D2D50;
+    border-radius: 15px;
+    height: 5vh;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    align-content: center;
+    font-size: medium;
+    width: 10vw;
+    text-align: center;
+
+}
+
+.actionLink{
+    text-decoration: none;
+}
+
+button:hover, .actionLink:hover {
+    background-color: #1D2D50;
+    color: #DAFFFB;
+    border-color: #DAFFFB;
+}
+.userRoleContainer {
+    display: flex;
+    margin-bottom: 7px;
+    
+
+}
+.userName{
+    font-size: large;
+    font-weight: 600;
+    padding: 5px;
+}
+.userRole {
+    font-size: large;
+    font-weight: 600;
+    background-color: #133B5C;
+    color: #DAFFFB;
+    border: 2px solid #133B5C;
+    border-radius: 15px;
+    padding: 5px;
+}
+.commentDesc{
+    
+    border: 2px solid #DAFFFB;
+    border-radius: 15px;
+    width: 15vw;
+    height: 10vh;
+    padding: 5px;
+    
+}
+
+.commentForm{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: start;
+    margin-top: 15px;
+    padding-top: 5px;
+    
+}
+
+textarea
+ {
+    background-color: #DAFFFB;
+    color: #1D2D50;
+    border: 2px solid #1D2D50;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ input {
+    background-color: #DAFFFB;
+    color: #1D2D50;
+    border: 2px solid #1D2D50;
+    border-radius: 15px;
+    height: 5vh;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    align-content: center;
+    font-size: medium;
+    width: 12vw;
+    text-align: center;
+ }
+
+ input:hover {
+    background-color: #1D2D50;
+    color: #DAFFFB;
+    border-color: #DAFFFB;
+}
